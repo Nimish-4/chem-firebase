@@ -1,0 +1,25 @@
+{
+        "devlopers" : [
+            {
+                "img":"",
+                "roll": "B20CH018",
+                "Name": "Hrishi Raj Singh",
+                "bio":"Frontend Web Developer"
+            },
+
+            {
+                "img":"",
+                "roll": "B20CH042",
+                "Name": "Shreya Pagaria",
+                "bio":"Frontend Web Developer"
+
+            },
+            {
+                "img":"",
+                "roll": "B20CH024",
+                "Name": "Nimish Purohit",
+                "bio":"Backend Web Developer"
+
+            }
+        ]
+}

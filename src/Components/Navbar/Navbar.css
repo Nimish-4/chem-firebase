@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Ubuntu:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* :root{
+    --navbarbar-height:60px;
+} */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #1b2430ea;
+    align-items: center;
+    position: sticky;
+    
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Poppins';
+}
+.navbar li{
+    list-style-type: none;
+    padding: 20px;
+}
+#logo img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.navbar h1{
+font-family: 'poppins' 'sans-serif';
+color: white;
+
+}
