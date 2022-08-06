@@ -4,8 +4,11 @@ import { loadFull } from "tsparticles";
 import thumbnail from "./imgs/thumbnail.png";
 import { Link } from 'react-router-dom'
 import './Header.css'
+import { useAuth } from "../contexts/AuthContext"
 
  const Header = () => {
+
+  const currentUser = useAuth();
   const particlesInit = async (main) => {
     console.log(main);
 
@@ -15,15 +18,16 @@ import './Header.css'
   const particlesLoaded = (container) => {
     console.log(container);
   };
-
+  
   return (
     // code for Header Welcome Text
     <div id='particles-js'>
        <div className='box'>
       <img src={thumbnail} alt="" id='thumbnail-img'/>
        <span>
-
-        <h4>Department of Chemical Engineering</h4>
+       
+        <h4>Department of { currentUser==null? 'chem':currentUser.currentUser.uid  }</h4>
+        
         <p>Brings to you</p>
        </span>
           <h1>Chemical Event's Name</h1>
